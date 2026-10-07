@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>PocketWebcam プライバシーポリシー / Privacy Policy</title>
-<meta name="description" content="PocketWebcam のプライバシーポリシー。Privacy policy for the PocketWebcam Android app.">
+<meta name="description" content="PocketWebcam のプライバシーポリシー。Privacy policy for the PocketWebcam Android app. Política de privacidad. Política de privacidade.">
 <style>
   :root {
     --bg: #ffffff;
@@ -74,7 +74,7 @@
     vertical-align: top;
   }
   th { background: var(--card); font-weight: 600; white-space: nowrap; }
-  section[lang="en"] { margin-top: 64px; }
+  section + section { margin-top: 64px; }
   footer {
     margin-top: 56px;
     padding-top: 20px;
@@ -88,17 +88,21 @@
 <main>
 
 <nav class="lang-nav">
-  <a href="#ja">日本語</a>
+  <a href="#ja" hreflang="ja">日本語</a>
   <span>/</span>
-  <a href="#en">English</a>
+  <a href="#en" hreflang="en">English</a>
+  <span>/</span>
+  <a href="#es" hreflang="es">Español</a>
+  <span>/</span>
+  <a href="#pt" hreflang="pt">Português</a>
 </nav>
 
 <section id="ja" lang="ja">
 
 <h1>PocketWebcam プライバシーポリシー</h1>
-<p class="updated">最終更新日: 2026-09-16</p>
+<p class="updated">最終更新日: 2026-10-07</p>
 
-<p>PocketWebcam(以下「本アプリ」)は、スマートフォンのカメラ映像を同じ Wi-Fi 内の
+<p>PocketWebcam(以下「本アプリ」)は、スマートフォンのカメラ映像を同じ LAN(ローカルネットワーク)内の
 PC へ配信するアプリです。本ポリシーは、本アプリが利用者の情報をどのように扱うかを説明するものです。</p>
 
 <h2>1. カメラの映像と音声</h2>
@@ -106,13 +110,13 @@ PC へ配信するアプリです。本ポリシーは、本アプリが利用�
 <p><strong>本アプリはカメラの映像を外部のサーバーへ送信しません。</strong></p>
 
 <ul>
-  <li>映像は端末の中で JPEG に変換され、<strong>端末が同じ Wi-Fi ネットワーク内に開いた
+  <li>映像は端末の中で JPEG に変換され、<strong>端末が同じ LAN 内に開いた
       HTTP サーバー経由でのみ</strong>配信されます。宛先は利用者自身が接続する PC などです。</li>
   <li>映像を保存しません。端末のストレージにも、開発者のサーバーにも記録は残りません。</li>
   <li><strong>音声は一切扱いません。</strong>マイクの権限を要求せず、録音も配信も行いません。</li>
 </ul>
 
-<p>配信は同じネットワーク内からであれば誰でも受信できます。信頼できないネットワーク(公衆 Wi-Fi など)では配信を開始しないでください。</p>
+<p>映像の視聴にパスワードはかかりません。同じネットワーク内からであれば、URL を知っている人は誰でも受信できます。信頼できないネットワーク(公衆 Wi-Fi など)では配信を開始しないでください。</p>
 
 <h2>2. 本アプリが端末に保存する情報</h2>
 
@@ -145,7 +149,7 @@ PC へ配信するアプリです。本ポリシーは、本アプリが利用�
 
 <h3>広告 ID のリセット・削除</h3>
 
-<p>広告 ID は Android の <strong>設定 &gt; プライバシー &gt; 広告</strong> からリセットまたは削除できます。</p>
+<p>広告 ID は Android の <strong>設定 &gt; プライバシー &gt; 広告</strong> からリセットまたは削除できます(項目の位置は端末により異なることがあります)。</p>
 
 <h2>4. 子ども向けサービスではないこと</h2>
 
@@ -158,7 +162,8 @@ PC へ配信するアプリです。本ポリシーは、本アプリが利用�
   <thead><tr><th>権限</th><th>用途</th></tr></thead>
   <tbody>
     <tr><td>カメラ</td><td>配信する映像の取得。これが本アプリの主機能です</td></tr>
-    <tr><td>インターネット / ネットワーク状態</td><td>同じ Wi-Fi 内への配信、および広告の取得</td></tr>
+    <tr><td>インターネット / ネットワーク状態</td><td>同じ LAN 内への配信、および広告の取得</td></tr>
+    <tr><td>付近のデバイス(ローカルネットワーク)</td><td>同じ LAN 内の PC が映像を受信できるようにするため。一部の Android バージョンでのみ要求します。位置情報の取得には使いません</td></tr>
     <tr><td>通知</td><td>配信中であることを示す常駐通知の表示</td></tr>
     <tr><td>フォアグラウンドサービス(カメラ)</td><td>画面を消した状態でも配信を継続するため</td></tr>
   </tbody>
@@ -178,9 +183,9 @@ PC へ配信するアプリです。本ポリシーは、本アプリが利用�
 <section id="en" lang="en">
 
 <h1>PocketWebcam Privacy Policy</h1>
-<p class="updated">Last updated: 2026-09-16</p>
+<p class="updated">Last updated: 2026-10-07</p>
 
-<p>PocketWebcam ("the app") streams your phone's camera to a PC on the same Wi-Fi
+<p>PocketWebcam ("the app") streams your phone's camera to a PC on the same local
 network. This policy explains how the app handles your information.</p>
 
 <h2>1. Camera video and audio</h2>
@@ -189,15 +194,16 @@ network. This policy explains how the app handles your information.</p>
 
 <ul>
   <li>Video is encoded to JPEG on the device and served <strong>only through an HTTP
-      server that the device opens on your local Wi-Fi network</strong>, to whatever you
+      server that the device opens on your local network</strong>, to whatever you
       connect from.</li>
   <li>No video is stored &mdash; not on the device, and not on any server of ours.</li>
   <li><strong>The app does not handle audio at all.</strong> It does not request the
       microphone permission, and it neither records nor streams sound.</li>
 </ul>
 
-<p>Anyone on the same network can receive the stream. Do not start streaming on a
-network you do not trust, such as public Wi-Fi.</p>
+<p>Viewing is not password protected. Anyone on the same network who knows the URL can
+receive the stream. Do not start streaming on a network you do not trust, such as
+public Wi-Fi.</p>
 
 <h2>2. What the app stores on your device</h2>
 
@@ -238,7 +244,7 @@ inside the app.</p>
 <h3>Resetting or deleting your advertising ID</h3>
 
 <p>You can reset or delete your advertising ID from Android's
-<strong>Settings &gt; Privacy &gt; Ads</strong>.</p>
+<strong>Settings &gt; Privacy &gt; Ads</strong> (the exact location may vary by device).</p>
 
 <h2>4. Not directed to children</h2>
 
@@ -252,7 +258,8 @@ from anyone under 13.</p>
   <thead><tr><th>Permission</th><th>Purpose</th></tr></thead>
   <tbody>
     <tr><td>Camera</td><td>Capturing the video to stream. This is the app's core function</td></tr>
-    <tr><td>Internet / network state</td><td>Serving the stream on your Wi-Fi network, and fetching ads</td></tr>
+    <tr><td>Internet / network state</td><td>Serving the stream on your local network, and fetching ads</td></tr>
+    <tr><td>Nearby devices (local network)</td><td>Letting a PC on the same local network receive the stream. Requested only on some Android versions. Not used for location</td></tr>
     <tr><td>Notifications</td><td>Showing the ongoing notification while streaming</td></tr>
     <tr><td>Foreground service (camera)</td><td>Keeping the stream alive while the screen is off</td></tr>
   </tbody>
@@ -270,10 +277,213 @@ from anyone under 13.</p>
 
 </section>
 
+<section id="es" lang="es">
+
+<h1>Política de privacidad de PocketWebcam</h1>
+<p class="updated">Última actualización: 2026-10-07</p>
+
+<p>PocketWebcam («la app») transmite la cámara de tu teléfono a un PC conectado a la
+misma red local. Esta política explica cómo trata la app tu información.</p>
+
+<h2>1. Video y audio de la cámara</h2>
+
+<p><strong>La app no envía la imagen de la cámara a ningún servidor externo.</strong></p>
+
+<ul>
+  <li>El video se convierte a JPEG en el dispositivo y se transmite <strong>solo a través
+      de un servidor HTTP que el dispositivo abre en tu red local</strong>, hacia el equipo
+      desde el que te conectes.</li>
+  <li>No se guarda ningún video: ni en el dispositivo ni en ningún servidor nuestro.</li>
+  <li><strong>La app no trata audio en absoluto.</strong> No solicita el permiso de
+      micrófono y no graba ni transmite sonido.</li>
+</ul>
+
+<p>La visualización no está protegida con contraseña. Cualquier persona en la misma red
+que conozca la URL puede recibir la transmisión. No inicies una transmisión en una red
+que no sea de confianza, como una Wi-Fi pública.</p>
+
+<h2>2. Información que la app guarda en tu dispositivo</h2>
+
+<p>La configuración que elijas (resolución, calidad JPEG, límite de FPS, número de
+puerto, idioma, etc.) se guarda <strong>solo en el dispositivo</strong>. Nunca se
+transmite.</p>
+
+<h2>3. Publicidad</h2>
+
+<p>La app muestra un anuncio de banner servido por Google AdMob.</p>
+
+<p>Para servir esos anuncios, <strong>Google y sus socios publicitarios pueden recopilar
+información como:</strong></p>
+
+<ul>
+  <li>tu ID de publicidad (Android Advertising ID)</li>
+  <li>tu dirección IP e información del dispositivo, como el modelo y la versión del sistema operativo</li>
+  <li>interacciones con los anuncios, como impresiones y clics</li>
+</ul>
+
+<p>El desarrollador de esta app no recopila ni conserva esta información; Google la
+trata según sus propias políticas. Para más detalles, consulta:</p>
+
+<ul>
+  <li>Política de privacidad de Google:
+      <a href="https://policies.google.com/privacy?hl=es">https://policies.google.com/privacy?hl=es</a></li>
+  <li>Cómo utiliza Google la información de sitios web o aplicaciones que usan sus servicios:
+      <a href="https://policies.google.com/technologies/partner-sites?hl=es">https://policies.google.com/technologies/partner-sites?hl=es</a></li>
+</ul>
+
+<h3>Consentimiento (EEE, Reino Unido y Suiza)</h3>
+
+<p>A los usuarios del Espacio Económico Europeo, el Reino Unido y Suiza se les pide su
+consentimiento antes de usar identificadores del dispositivo con fines publicitarios.
+Puedes cambiar tu elección en cualquier momento desde
+<strong>Ayuda &gt; Privacidad &gt; Consentimiento de anuncios</strong> dentro de la app.</p>
+
+<h3>Restablecer o eliminar tu ID de publicidad</h3>
+
+<p>Puedes restablecer o eliminar tu ID de publicidad desde los ajustes de Android,
+en <strong>Privacidad &gt; Anuncios</strong> (la ubicación exacta puede variar según el dispositivo).</p>
+
+<h2>4. No está dirigida a niños</h2>
+
+<p>La app no está diseñada para niños y no recopila a sabiendas información de menores
+de 13 años.</p>
+
+<h2>5. Para qué se usa cada permiso</h2>
+
+<div class="table-wrap">
+<table>
+  <thead><tr><th>Permiso</th><th>Finalidad</th></tr></thead>
+  <tbody>
+    <tr><td>Cámara</td><td>Capturar el video que se transmite. Es la función principal de la app</td></tr>
+    <tr><td>Internet / estado de la red</td><td>Transmitir en tu red local y obtener anuncios</td></tr>
+    <tr><td>Dispositivos cercanos (red local)</td><td>Permitir que un PC de la misma red local reciba la transmisión. Solo se solicita en algunas versiones de Android. No se usa para la ubicación</td></tr>
+    <tr><td>Notificaciones</td><td>Mostrar la notificación permanente durante la transmisión</td></tr>
+    <tr><td>Servicio en primer plano (cámara)</td><td>Mantener la transmisión con la pantalla apagada</td></tr>
+  </tbody>
+</table>
+</div>
+
+<h2>6. Contacto</h2>
+
+<p>Abre una incidencia (issue) en el repositorio que aloja esta página.</p>
+
+<h2>7. Cambios en esta política</h2>
+
+<p>Si esta política cambia, la versión actualizada se publicará aquí con una nueva fecha
+de «Última actualización».</p>
+
+</section>
+
+<section id="pt" lang="pt">
+
+<h1>Política de privacidade do PocketWebcam</h1>
+<p class="updated">Última atualização: 2026-10-07</p>
+
+<p>O PocketWebcam («o app») transmite a câmera do seu celular para um PC conectado à
+mesma rede local. Esta política explica como o app trata as suas informações.</p>
+
+<h2>1. Vídeo e áudio da câmera</h2>
+
+<p><strong>O app não envia a imagem da câmera para nenhum servidor externo.</strong></p>
+
+<ul>
+  <li>O vídeo é convertido em JPEG no dispositivo e transmitido <strong>somente por meio
+      de um servidor HTTP que o dispositivo abre na sua rede local</strong>, para o
+      equipamento a partir do qual você se conectar.</li>
+  <li>Nenhum vídeo é armazenado: nem no dispositivo, nem em qualquer servidor nosso.</li>
+  <li><strong>O app não trata áudio de forma alguma.</strong> Ele não solicita a
+      permissão do microfone e não grava nem transmite som.</li>
+</ul>
+
+<p>A visualização não é protegida por senha. Qualquer pessoa na mesma rede que conheça a
+URL pode receber a transmissão. Não inicie uma transmissão em uma rede em que você não
+confia, como uma Wi-Fi pública.</p>
+
+<h2>2. Informações que o app armazena no seu dispositivo</h2>
+
+<p>As configurações que você escolher (resolução, qualidade JPEG, limite de FPS, número
+da porta, idioma etc.) são armazenadas <strong>somente no dispositivo</strong>. Elas
+nunca são transmitidas.</p>
+
+<h2>3. Publicidade</h2>
+
+<p>O app exibe um anúncio de banner fornecido pelo Google AdMob.</p>
+
+<p>Para exibir esses anúncios, <strong>o Google e seus parceiros de publicidade podem
+coletar informações como:</strong></p>
+
+<ul>
+  <li>seu ID de publicidade (Android Advertising ID)</li>
+  <li>seu endereço IP e informações do dispositivo, como modelo e versão do sistema operacional</li>
+  <li>interações com os anúncios, como impressões e cliques</li>
+</ul>
+
+<p>O desenvolvedor deste app não coleta nem retém essas informações; o Google as trata
+de acordo com as próprias políticas. Para mais detalhes, consulte:</p>
+
+<ul>
+  <li>Política de Privacidade do Google:
+      <a href="https://policies.google.com/privacy?hl=pt-BR">https://policies.google.com/privacy?hl=pt-BR</a></li>
+  <li>Como o Google usa informações de sites ou apps que utilizam nossos serviços:
+      <a href="https://policies.google.com/technologies/partner-sites?hl=pt-BR">https://policies.google.com/technologies/partner-sites?hl=pt-BR</a></li>
+</ul>
+
+<h3>Consentimento (EEE, Reino Unido e Suíça)</h3>
+
+<p>Os usuários do Espaço Econômico Europeu, do Reino Unido e da Suíça são solicitados a
+dar consentimento antes que identificadores do dispositivo sejam usados para publicidade.
+Você pode alterar sua escolha a qualquer momento em
+<strong>Ajuda &gt; Privacidade &gt; Consentimento de anúncios</strong> dentro do app.</p>
+
+<h3>Redefinir ou excluir seu ID de publicidade</h3>
+
+<p>Você pode redefinir ou excluir seu ID de publicidade nas configurações do Android,
+em <strong>Privacidade &gt; Anúncios</strong> (o local exato pode variar conforme o dispositivo).</p>
+
+<h2>4. Não é direcionado a crianças</h2>
+
+<p>O app não foi projetado para crianças e não coleta intencionalmente informações de
+menores de 13 anos.</p>
+
+<h2>5. Para que serve cada permissão</h2>
+
+<div class="table-wrap">
+<table>
+  <thead><tr><th>Permissão</th><th>Finalidade</th></tr></thead>
+  <tbody>
+    <tr><td>Câmera</td><td>Capturar o vídeo transmitido. É a função principal do app</td></tr>
+    <tr><td>Internet / estado da rede</td><td>Transmitir na sua rede local e obter anúncios</td></tr>
+    <tr><td>Dispositivos por perto / Dispositivos próximos (rede local)</td><td>Permitir que um PC da mesma rede local receba a transmissão. Solicitada apenas em algumas versões do Android. Não é usada para localização</td></tr>
+    <tr><td>Notificações</td><td>Exibir a notificação permanente durante a transmissão</td></tr>
+    <tr><td>Serviço em primeiro plano (câmera)</td><td>Manter a transmissão com a tela desligada</td></tr>
+  </tbody>
+</table>
+</div>
+
+<h2>6. Contato</h2>
+
+<p>Abra uma issue no repositório que hospeda esta página.</p>
+
+<h2>7. Alterações nesta política</h2>
+
+<p>Se esta política mudar, a versão atualizada será publicada aqui com uma nova data de
+«Última atualização».</p>
+
+</section>
+
 <footer>
   PocketWebcam &mdash; Android app that streams your phone camera over your local network.
 </footer>
 
 </main>
+<script>
+  // アプリやブラウザの言語に合わせて、その言語の節へ移動する。
+  // アプリからは #ja / #en / #es / #pt 付きで開くので、そのときは何もしない。
+  (function () {
+    if (location.hash) return;
+    var lang = (navigator.language || '').toLowerCase().slice(0, 2);
+    if (lang === 'en' || lang === 'es' || lang === 'pt') location.replace('#' + lang);
+  })();
+</script>
 </body>
 </html>
